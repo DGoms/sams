@@ -20,7 +20,7 @@ export default defineConfig(({ command }) => {
         '@': fileURLToPath(new URL('./src', import.meta.url))
       }
     },
-    base: command == 'build' ? 'https://dgoms.github.io/sams/' : '/',
+    base: command == 'build' ? './' : '/',
     build: {
       outDir: 'docs/'
     }
