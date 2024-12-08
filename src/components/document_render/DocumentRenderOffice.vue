@@ -6,11 +6,15 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
 import type { DocumentRenderProps } from '.'
 
 const props = defineProps<DocumentRenderProps>()
-const fullPath =
-  'https://view.officeapps.live.com/op/embed.aspx?src=https://dgoms.github.io/sams' + props.path
+
+const fullPath = computed(
+  () =>
+    'https://view.officeapps.live.com/op/embed.aspx?src=https://dgoms.github.io/sams' + props.path
+)
 </script>
 
 <style scoped></style>
