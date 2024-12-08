@@ -1,6 +1,7 @@
 import DocumentRenderDownload from './DocumentRenderDownload.vue'
 import DocumentRenderOffice from './DocumentRenderOffice.vue'
 import DocumentRenderPdf from './DocumentRenderPdf.vue'
+import DocumentRenderImg from './DocumentRenderImg.vue'
 
 export const DocumentRender = [
   {
@@ -17,7 +18,7 @@ export const DocumentRender = [
   },
   {
     pattern: /(png|jpg|jpeg)/gi,
-    component: DocumentRenderDownload
+    component: DocumentRenderImg
   },
   {
     pattern: /.*/gi,
